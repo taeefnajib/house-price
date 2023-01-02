@@ -1,10 +1,4 @@
-"""
-Original code is taken from:
-https://github.com/Nanfengzhijia/Pytorch-boston-house-price/blob/master/homework-house-pytorch.py
-This tutorial uses load_boston method with is removed from sklearn recently because of a legal issue. 
-So we used a csv file downloaded from here: https://www.kaggle.com/datasets/arunjathari/bostonhousepricedata
-"""
-
+# Importing all dependencies
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
@@ -14,6 +8,7 @@ from torch import nn
 from dataclasses_json import dataclass_json
 from dataclasses import dataclass
 
+# Creating the dataclasses
 @dataclass_json
 @dataclass
 class Hyperparameters(object):
